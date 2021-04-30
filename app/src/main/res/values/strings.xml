@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Encode Decode String</string>
+    <string name="encode">Encode</string>
+    <string name="enter_text">Enter text</string>
+    <string name="decode">Decode</string>
+    <string name="encode_text">Encode Text</string>
+    <string name="decode_text">Decode Text</string>
+</resources>

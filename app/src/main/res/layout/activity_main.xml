@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/encode"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/twenty"
+            tools:ignore="SpUsage" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editEncode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtEncoded"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:hint="@string/enter_text" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtEncoded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/twenty"
+            android:hint="@string/encode_text"
+            android:textIsSelectable="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btEncode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/encode" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:padding="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/decode"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/twenty"
+            tools:ignore="SpUsage" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editDecode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtDecoded"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:hint="@string/enter_text" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDecoded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/twenty"
+            android:hint="@string/decode_text"
+            android:textIsSelectable="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btDecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/decode" />
+    </RelativeLayout>
+
+</LinearLayout>
